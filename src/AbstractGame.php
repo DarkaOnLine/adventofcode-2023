@@ -46,10 +46,12 @@ abstract class AbstractGame extends Command
 
     protected function solveRealPartOne(array $inputData): void
     {
+        $start = microtime(true);
         dump('========= PART ONE =================');
         $results = $this->solvePartOne($inputData);
 
         dump($results);
+        dump("Process took ". number_format(microtime(true) - $start, 6). " seconds.");
         dump('====================================');
         dump('');
     }
@@ -65,10 +67,12 @@ abstract class AbstractGame extends Command
 
     protected function solveRealPartTwo(array $inputData): void
     {
+        $start = microtime(true);
         dump('========= PART TWO =================');
         $results = $this->solvePartTwo($inputData);
 
         dump($results);
+        dump("Process took ". number_format(microtime(true) - $start, 6). " seconds.");
         dump('====================================');
         dump('');
     }

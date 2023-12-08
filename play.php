@@ -9,6 +9,8 @@ use DarkaOnLine\AdventOfCode2023\Game3;
 use DarkaOnLine\AdventOfCode2023\Game4;
 use DarkaOnLine\AdventOfCode2023\Game5;
 use DarkaOnLine\AdventOfCode2023\Game6;
+use DarkaOnLine\AdventOfCode2023\Game7;
+use DarkaOnLine\AdventOfCode2023\Game8;
 use Symfony\Component\Console\Application;
 
 $application = new Application();
@@ -19,5 +21,7 @@ $application->add(new Game3);
 $application->add(new Game4);
 $application->add(new Game5);
 $application->add(new Game6);
+$application->add(new Game7);
+$application->add(new Game8);
 
 $application->run();

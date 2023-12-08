@@ -24,7 +24,6 @@ Distance:   643   1184   1362   1041'];
 
         $winningsPerBoat = $this->getWinningsPerBoat($times, $distances);
 
-
         return array_product($winningsPerBoat);
 
     }
